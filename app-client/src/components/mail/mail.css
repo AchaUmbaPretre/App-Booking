@@ -1,0 +1,42 @@
+.mail{
+    width: 100%;
+    margin-top: 50px;
+    padding : 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: brown;
+    color: #fff;
+
+}
+.mailDesc{
+    padding: 10px 0px 20px 0px;
+    font-size: 15px;
+    font-weight:200;
+}
+.mailInput{
+    height: 40px;
+    width: 350px;
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.mailBtn{
+    height: 40px;
+    border: none;
+    padding: 0 10px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 500;
+    background: brown;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.mailBtn:hover{
+    color: brown;
+    background: #fff;
+}
+.mailBtn:focus{
+    outline: none;
+}

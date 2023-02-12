@@ -1,0 +1,85 @@
+.listeContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.listeRow{
+ width: 100%;
+ max-width: 1025px;
+ display: flex;
+ gap: 20px;
+ justify-content: space-between;
+}
+.listContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.listeSearch{
+    flex: 1;
+    position: sticky;
+    width: 100%;
+    background: brown;
+    color: #f2f2f2;
+    padding: 10px;
+    height: max-content;
+    border-radius: 10px;
+}
+.listeH1{
+    font-size: 20px;
+    padding: 5px 0px;
+    font-weight: bold;
+}
+.listeMenu{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+}
+.listeNom{
+    font-size: 14px;
+    padding: 5px 0px;
+}
+.listeInput{
+    height: 40px;
+    padding: 10px;
+}
+.listeH2{
+    font-size: 15px;
+    padding: 10px 0px;
+}
+.listeOption{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.listTxt{
+    font-size: 12px;
+    font-weight: 500;
+    color: #f2f2f2;
+}
+.listeOptionInput{
+    text-align: center;
+    width: 60px;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+.listeBtn{
+    border: none;
+    width: 100%;
+    padding: 10px;
+    background: #f2f2f2;
+    color: brown;
+    margin: 10px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+.listeBtn:hover{
+    border: 2px solid #f2f2f2;
+    background: brown;
+    color: #f2f2f2; 
+}

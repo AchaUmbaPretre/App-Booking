@@ -1,0 +1,42 @@
+.containerItem{
+    width: 100%;
+    max-width: 1025px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.rowItem{
+    flex: 1;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+}
+.rowImg{
+    width: 100%;
+}
+.rowName{
+    font-weight: bold;
+}
+.rowCity{
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.527);
+}
+.rowPrix{
+    font-weight: 500;
+}
+.rowBtn{
+    border: none;
+    outline: none;
+    background: brown;
+    color: #f2f2f2;
+    font-size: 13px;
+    padding: 4px;
+    cursor:pointer;
+    margin: 0px 10px 10px 0px;
+}
+.rowBtn:hover{
+    border: 2px solid brown;
+    color: brown;
+    background: #f2f2f2;
+}

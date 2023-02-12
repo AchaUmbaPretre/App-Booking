@@ -1,0 +1,116 @@
+.listeResultat{
+    flex:3;
+}
+
+.listResultatRow{
+    flex:1;
+    display: flex;
+    border: 1px solid lightgray;
+    padding: 10px;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+}
+.resultatRow{
+    display: flex;
+    gap: 20px;
+}
+.listeImg{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.resultatTxt{
+    padding: 0px 20px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.resultatH1{
+    font-size: 20px;
+}
+.resultatSpan1{
+    font-size: 12px;
+}
+.resultatSpan2{
+    font-size: 12px;
+    background: green;
+    border-radius: 5px;
+    padding: 5px 2px;
+    width: max-content;
+    color: #fff;
+}
+.resultatSpan3{
+    font-size: 14px;
+    font-weight: 600;
+}
+.resultatSpan4{
+    font-size : 14px;
+    color:rgba(0, 0, 0, 0.712);
+}
+.resultatSpan5{
+    font-size: 15px;
+    font-weight: 600;
+    color: green;
+}
+.resultatSpan6{
+    font-size: 12px;
+    color: green;
+}
+.listeResultatRow2{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Row2{
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+.Row2h2{
+    font-size: 20px;
+}
+.RowBtn{
+    border: none;
+    background: brown;
+    color: #f2f2f2;
+    padding: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.RowBtn:hover{
+    border: 2px solid brown;
+    background: #f2f2f2;
+    color: brown;
+}
+.Row3{
+    display: flex;
+    flex-direction: column;
+}
+.spanRow{
+    font-size: 30px;
+    text-align: right;
+    font-weight: bold;
+}
+.spanRow2{
+    font-size: 13px;
+    color:rgba(0, 0, 0, 0.658);
+    font-weight: 300;
+}
+.spanBtn{
+    border: none;
+    color: #f2f2f2;
+    background: brown;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+.spanBtn:hover{
+    border: 2px solid brown;
+    background: #f2f2f2;
+    color: brown;   
+}

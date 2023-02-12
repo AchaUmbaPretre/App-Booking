@@ -1,0 +1,145 @@
+.hotel{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hotelContainer{
+    width: 100%;
+    max-width: 1025px;
+    display: flex;
+    flex-direction: column;
+}
+.hotelRow1{
+    display: flex;
+    justify-content: space-between;
+}
+.hotelSousTxt1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.hotelSousTxt1>h1{
+    font-size: 25px;
+}
+.hotelTxt{
+    font-size: 13px;
+    font-weight: 400;
+}
+.hotelTxt1{
+    font-size: 16px;
+    font-weight: 600;
+}
+.hotelTxt2{
+    font-size: 16px;
+    color: green;
+    font-weight: 600;
+}
+.hotelBtn{
+    border: none;
+    height: max-content;
+    border-radius: 5px;
+    outline: none;
+    color: #f2f2f2;
+    padding:10px;
+    background: brown;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.hotelBtn:hover{
+    border: 2px solid brown;
+    background: #f2f2f2;
+    color: brown;
+}
+.hotelRow2{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hotelImgWrapper{
+    width: 33%;
+}
+.hotelImg{
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.hotelRow3{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.hotelWrapperLeft{
+    flex:3;
+    margin-right: 20px;
+}
+.hotelWrapperLeft>h1{
+    font-size: 20px;
+}
+.hotelWrapper{
+    font-size: 14px;
+    margin-top: 20px
+}
+
+.hotelWrapperRight{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: lightgray;
+    padding: 20px;
+}
+.hotelWrapperRight>h1{
+    font-size: 18px;
+    color: #555;
+}
+.hotelWrapperRight>span{
+    font-size: 14px;
+    color: #555;
+}
+.hotelWrapperRight>h2{
+    font-weight: bold;
+}
+.hotelBtnBottom{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    background: brown;
+    color: #f2f2f2;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.hotelBtnBottom:hover{
+    border: 2px solid brown;
+    background: #f2f2f2;
+    color: brown;
+}
+.slider{
+    position: sticky;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.685);
+    z-index: 90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: brown;
+    cursor: pointer;
+}
+.arrow{
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.185);
+    margin: 30px;
+    cursor: pointer;
+}

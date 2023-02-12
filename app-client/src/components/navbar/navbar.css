@@ -1,0 +1,43 @@
+.navbar{
+    height: 50px;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbarContainer{
+    width: 1025px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h2{
+    color : #fff;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+li{
+    margin-right: 20px;
+}
+a{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+i{
+    padding-right: 10px;
+    font-size: 15px;
+}
+.iconI{
+    background-color:#fff;
+    color: brown;
+    padding: 10px;
+}
+.iconI:hover{
+    border: 1px solid #fff;
+    color: #fff;
+    background: brown;
+}

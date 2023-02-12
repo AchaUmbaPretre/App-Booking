@@ -1,0 +1,51 @@
+.containerRow{
+    display: flex;
+    justify-content: space-between;
+    gap : 20px;
+    width: 100%;
+    max-width: 1025px;
+}
+.row{
+    flex:1;
+}
+.RowImage{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.sousRow{
+    padding: 7px;
+}
+.rowH3{
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+}
+.rowsub{
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.527);
+}
+.container{
+    width: 100%;
+    margin-top: 10px;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.containerItem{
+    position: relative;
+    color : #fff;
+    overflow: hidden;
+    object-fit: cover;
+    height: 250px;
+}
+.containerImage{
+    width: 100%;
+}
+.containerTitle{
+    position: absolute;
+    bottom : 20px;
+    left : 20px;
+}

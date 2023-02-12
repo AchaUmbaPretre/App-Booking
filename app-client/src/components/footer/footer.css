@@ -1,0 +1,28 @@
+.footer{
+    width: 100%;
+    max-width: 1025px;
+    font-size: 13px;
+    margin-top: 20px;
+}
+.footerContainer{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 50px;
+}
+.footerItem{
+    display: flex;
+    flex-direction: column;
+}
+.footerList{
+    padding: 5px;
+    cursor: pointer;
+    color:rgba(0, 0, 0, 0.637)
+}
+.footerList:hover{
+    color: brown;
+}
+.footerFin{
+    text-align: center;
+    padding: 20px
+}
