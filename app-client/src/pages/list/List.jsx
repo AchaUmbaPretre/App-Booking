@@ -5,12 +5,17 @@ import Header from '../../components/header/Header';
 import ListeItem from '../../components/listeItem/ListeItem';
 import { useLocation } from 'react-router-dom';
 import { useState } from 'react';
+import { DateRange } from 'react-date-range';
+import 'react-date-range/dist/styles.css'
+import 'react-date-range/dist/theme/default.css'
+import { format } from 'date-fns';
 
 const List = () => {
   const location = useLocation();
   const [destination, setDestination] = useState(location.state.destination);
   const [date, setDate] = useState(location.state.date);
   const [options, setOptions] = useState(location.state.options);
+  const [openDate, setOpenDate]= useState(false)
 
   return (
     <>
@@ -28,7 +33,15 @@ const List = () => {
 
             <div className="listeMenu">
               <span className="listeNom">Check-in Date</span>
-              <input type="date" className="listeInput" placeholder={date} />
+              <div className="listeDate" onClick={()=>setOpenDate(!openDate)}>{`${format(date[0].startDate, "MM/dd/yyyy")} to ${format(date[0].endDate, "MM/dd/yyyy")}`}</div>
+              { openDate &&
+              <DateRange
+                onChange={(item) => setDate([item.selection])}
+                ranges={date}
+                className='dateList'
+                minDate={new Date()}
+               />
+              }
             </div>
             <div className="listeDetail">
               <h2 className="listeH2">Options</h2>

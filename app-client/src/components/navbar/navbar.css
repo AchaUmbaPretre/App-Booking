@@ -16,10 +16,8 @@
 }
 ul{
     display: flex;
+    gap: 10px;
     list-style: none;
-}
-li{
-    margin-right: 20px;
 }
 a{
     color: #fff;
@@ -40,4 +38,22 @@ i{
     border: 1px solid #fff;
     color: #fff;
     background: brown;
+}
+
+@media screen and (max-width: 992px){
+    .navbarContainer{
+        width: 900px;
+        
+    }
+}
+@media screen and (max-width: 768px){
+    .navbarContainer{
+        width: 700px;
+        
+    }
+}
+@media screen and (max-width: 568px){
+    .navbarContainer{
+        max-width: 500px;
+    }
 }

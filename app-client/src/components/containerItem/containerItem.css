@@ -40,3 +40,19 @@
     color: brown;
     background: #f2f2f2;
 }
+
+@media screen and (max-width: 992px){
+    .containerItem{
+        width: 900px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .containerItem{
+        width: 700px;
+        
+    }
+}
+@media screen and (max-width: 568px){
+    
+}

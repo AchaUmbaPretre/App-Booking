@@ -26,3 +26,15 @@
     text-align: center;
     padding: 20px
 }
+
+@media screen and (max-width: 992px){
+    .footer{
+        width: 900px;
+    }
+}
+@media screen and (max-width: 768px){
+    .footer{
+        width: 700px;
+        
+    }
+}

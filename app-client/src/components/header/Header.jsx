@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './header.css'
+import { DateRange } from 'react-date-range';
+import 'react-date-range/dist/styles.css'
+import 'react-date-range/dist/theme/default.css'
+import { format } from 'date-fns';
 
 const Header = ({type}) => {
   let [options, setOptions] =useState({
@@ -10,7 +14,15 @@ const Header = ({type}) => {
   })
   const [openOptions, setOpenOptions] = useState(false);
   const [destination, setDestination] = useState('');
-  let [date, setDate] = useState('');
+  let [date, setDate] = useState([
+    {
+      startDate: new Date(),
+      endDate: new Date(),
+      key: "selection"
+    }
+  ]);
+
+  const [openDate, setOpenDate]= useState(false)
 
   const navigate = useNavigate();
 
@@ -38,16 +50,26 @@ const Header = ({type}) => {
           </div>
           { type !== 'liste'&&<> <h1>A lifetime of discounts? It's Genius.</h1>
           <p>Get rewarded for your travels - unlock instant savings of 10% or more with a free A-book account</p>
-          <a href="" className="btnHeader">Sign in / Register</a>
+          <a to="" className="btnHeader">Sign in / Register</a>
           <div className="calendar">
             <div className="spanIcon">
               <i className="fas fa-bed"></i>
-              <input type="text" placeholder='Where are you going?' onChange={(e)=> setDestination(e.target.value)} />
+              <input type="text" placeholder='commune ?' onChange={(e)=> setDestination(e.target.value)} />
             </div>
 
             <div className="spanIcon">
               <i className='fas fa-calendar'></i>
-              <input type="date" onChange={(e)=> setDate(e.target.value)}/>
+              <span className="optionTxt" onClick={()=>setOpenDate(!openDate)} >{`${format(date[0].startDate, "MM/dd/yyyy")} to ${format(date[0].endDate, "MM/dd/yyyy")}`}</span>
+              { openDate &&
+              <DateRange
+                editableDateInputs={true}
+                onChange={(item) => setDate([item.selection])}
+                moveRangeOnFirstSelection={false}
+                ranges={date}
+                className='date'
+                minDate={new Date()}
+               />
+              }
             </div>
 
             <div className="spanIcon">

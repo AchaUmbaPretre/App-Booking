@@ -12,10 +12,12 @@
  gap: 20px;
  justify-content: space-between;
 }
+
 .listContainer{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    z-index: -1;
 }
 
 
@@ -35,6 +37,7 @@
     font-weight: bold;
 }
 .listeMenu{
+    position: relative;
     display: flex;
     flex-direction: column;
     padding: 5px 0;
@@ -42,6 +45,17 @@
 .listeNom{
     font-size: 14px;
     padding: 5px 0px;
+}
+.listeDate{
+    background: #FFF;
+    color: black;
+    font-size: 13px;
+    padding: 10px;
+}
+.dateList{
+    position: absolute;
+    top: 90px;
+    z-index: 9;
 }
 .listeInput{
     height: 40px;

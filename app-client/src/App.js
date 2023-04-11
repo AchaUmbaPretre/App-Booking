@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter,Router, Routes, Route} from 'react-router-dom'
+import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 import Home from './pages/home/Home';
 import List from './pages/list/List';
 import Hotel from './pages/hotel/Hotel';
@@ -7,16 +7,32 @@ import Hotel from './pages/hotel/Hotel';
 
 
 function App() {
+
+  const router = createBrowserRouter([
+    {
+      path:'/',
+      element: <Home/>
+    },
+    {
+      path:'/',
+      element: <Home/>,
+    },
+    {
+      path:'/hotels',
+      element: <List/>,
+    },
+    {
+      path:'/hotels/:id',
+      element: <Hotel/>,
+    }
+        
+  ])
   
   return (
-      <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/hotels" element={<List/>} />
-            <Route path="/hotels/:id" element={<Hotel/>} />
-        </Routes>
-        
-      </BrowserRouter>
+
+      <div>
+        <RouterProvider router={router}/>
+      </div>     
   
   );
 }
